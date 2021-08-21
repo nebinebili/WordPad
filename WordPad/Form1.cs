@@ -72,47 +72,47 @@ namespace WordPad
 
         private void cmB_Size_SelectedIndexChanged(object sender, EventArgs e)
         {
-            richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text));         
+            richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text));         
         }
 
         private void btn_Bold_Click(object sender, EventArgs e)
         {
             ++countb;
-            if (countb % 2 != 0 && counti % 2 != 0 && countu%2!=0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
-            else if (countb % 2 != 0 && counti % 2 != 0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Bold | FontStyle.Italic);
-            else if (countb % 2 != 0 && countu % 2 != 0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Bold | FontStyle.Underline);
-            else if(countb % 2 != 0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text),FontStyle.Bold);
-            else if(countb%2==0 && counti%2!=0 && countu%2!=0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Italic | FontStyle.Underline);
-            else if(countb%2==0 && counti%2!=0 ) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Italic);
-            else if(countb%2==0 && countu%2!=0 ) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Underline);
-            else if (countb % 2 == 0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Regular);
+            if (countb % 2 != 0 && counti % 2 != 0 && countu%2!=0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
+            else if (countb % 2 != 0 && counti % 2 != 0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Bold | FontStyle.Italic);
+            else if (countb % 2 != 0 && countu % 2 != 0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Bold | FontStyle.Underline);
+            else if(countb % 2 != 0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text),FontStyle.Bold);
+            else if(countb%2==0 && counti%2!=0 && countu%2!=0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Italic | FontStyle.Underline);
+            else if(countb%2==0 && counti%2!=0 ) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Italic);
+            else if(countb%2==0 && countu%2!=0 ) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Underline);
+            else if (countb % 2 == 0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Regular);
         }
 
         private void btn_underline_Click(object sender, EventArgs e)
         {
             ++countu;
-            if (countb % 2 != 0 && counti % 2 != 0 && countu % 2 != 0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
-            else if (countu % 2 != 0 && counti % 2 != 0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Underline | FontStyle.Italic);
-            else if (countu % 2 != 0 && countb % 2 != 0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Underline | FontStyle.Bold);
-            else if (countu % 2 != 0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Underline);
-            else if (countu % 2 == 0 && countb % 2 != 0 && counti % 2 != 0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Italic | FontStyle.Bold);
-            else if (countu % 2 == 0 && counti % 2 != 0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Italic);
-            else if (countu % 2 == 0 && countb % 2 != 0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Bold);
-            else if (countu % 2 == 0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Regular);
+            if (countb % 2 != 0 && counti % 2 != 0 && countu % 2 != 0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
+            else if (countu % 2 != 0 && counti % 2 != 0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Underline | FontStyle.Italic);
+            else if (countu % 2 != 0 && countb % 2 != 0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Underline | FontStyle.Bold);
+            else if (countu % 2 != 0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Underline);
+            else if (countu % 2 == 0 && countb % 2 != 0 && counti % 2 != 0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Italic | FontStyle.Bold);
+            else if (countu % 2 == 0 && counti % 2 != 0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Italic);
+            else if (countu % 2 == 0 && countb % 2 != 0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Bold);
+            else if (countu % 2 == 0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Regular);
         }
 
 
         private void btn_Italic_Click(object sender, EventArgs e)
         {
             ++counti;
-            if (countb % 2 != 0 && counti % 2 != 0 && countu % 2 != 0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
-            else if (counti % 2 != 0 && countu % 2 != 0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Underline | FontStyle.Italic);
-            else if (counti % 2 != 0 && countb % 2 != 0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Italic | FontStyle.Bold);
-            else if (counti % 2 != 0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Italic);
-            else if (counti % 2 == 0 && countb % 2 != 0 && countu % 2 != 0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Underline | FontStyle.Bold);
-            else if (counti % 2 == 0 && countu % 2 != 0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Underline);
-            else if (counti % 2 == 0 && countb % 2 != 0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Bold);
-            else if (counti % 2 == 0) richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Regular);
+            if (countb % 2 != 0 && counti % 2 != 0 && countu % 2 != 0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
+            else if (counti % 2 != 0 && countu % 2 != 0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Underline | FontStyle.Italic);
+            else if (counti % 2 != 0 && countb % 2 != 0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Italic | FontStyle.Bold);
+            else if (counti % 2 != 0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Italic);
+            else if (counti % 2 == 0 && countb % 2 != 0 && countu % 2 != 0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Underline | FontStyle.Bold);
+            else if (counti % 2 == 0 && countu % 2 != 0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Underline);
+            else if (counti % 2 == 0 && countb % 2 != 0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Bold);
+            else if (counti % 2 == 0) richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text), FontStyle.Regular);
         }
 
         private void btn_Center_Click(object sender, EventArgs e)
@@ -170,8 +170,8 @@ namespace WordPad
         private void cmB_Color_SelectedIndexChanged(object sender, EventArgs e)
         {
             Color color = Color.FromName(cmB_Color.SelectedItem.ToString());
-           // richTextBox1.SelectionColor = color;
-            richTextBox1.ForeColor = color;
+            richTextBox1.SelectionColor = color;
+            
         }
 
        
