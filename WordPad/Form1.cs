@@ -72,7 +72,7 @@ namespace WordPad
 
         private void cmB_Size_SelectedIndexChanged(object sender, EventArgs e)
         {
-            richTextBox1.SelectionFont = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text));         
+            richTextBox1.Font = new Font(cmB_Font.Text, int.Parse(cmB_Size.Text));         
         }
 
         private void btn_Bold_Click(object sender, EventArgs e)
